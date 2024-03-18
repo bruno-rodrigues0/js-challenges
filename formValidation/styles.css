@@ -1,0 +1,88 @@
+:root{
+    --main-color: rgb(32, 32, 32);
+    --text-color: rgb(190, 190, 190);
+    --second-color: rgb(43, 43, 43);
+    --third-color: rgba(65, 65, 65, 0.456);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body
+{
+    background-color: var(--main-color);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    height: auto;
+    background-color: var(--second-color);
+
+    padding: 1rem;
+    margin: 4rem  auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px 0px rgb(22, 22, 22);
+}
+
+form h2{
+    font-size: 2rem;
+}
+
+form label{
+    padding-block: 1rem;
+    font-size: 1.4rem;
+}
+
+form input{
+    appearance: none;
+    border: none;
+    background-color: var(--third-color);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem ;
+    font-weight: 500;
+    transition: .1s;
+}
+
+input:hover{
+    background-color: rgba(94, 94, 94, 0.456);
+}
+
+input:focus{
+    outline: 2px solid rgb(70, 70, 70);
+}
+
+#sub{
+    margin-top: 2rem;
+    background-color: #1DB954d0;
+    font-weight: 700;
+    color: white;
+    transition: .1s;
+}
+
+#sub:hover{
+    background-color: #2cd667d0;
+}
+
+#sub:active{
+    background-color: #3adc73d0;
+}
+
+/* nao preciso entender essa parte pra saber q isso eh lindo dms */
+
+/* tira o bg-color do autocomplete do chrome */
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* LINDO GOSTOSO */
