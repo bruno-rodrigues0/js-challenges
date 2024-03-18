@@ -25,7 +25,6 @@ form{
     max-width: 40%;
     height: auto;
     background-color: var(--second-color);
-
     padding: 1rem;
     margin: 4rem  auto;
     border-radius: 8px;
@@ -76,13 +75,7 @@ input:focus{
     background-color: #3adc73d0;
 }
 
-/* nao preciso entender essa parte pra saber q isso eh lindo dms */
-
-/* tira o bg-color do autocomplete do chrome */
-
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
 }
-
-/* LINDO GOSTOSO */
