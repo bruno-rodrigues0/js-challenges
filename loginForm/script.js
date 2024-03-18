@@ -32,7 +32,8 @@ form.addEventListener("submit", (event) => {
     
     event.preventDefault()
     
-    const [name, email, key] = [...document.querySelectorAll("#name, #email, #key")]    
+    const inputs = [...document.querySelectorAll("#name, #email, #key")]
+    const [name, email, key] = inputs.map(item => item.value.trim())
     
     if(name && email && key){
         
